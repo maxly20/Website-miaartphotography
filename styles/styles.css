@@ -6,4 +6,133 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1c1c1c;
+}
+
+#slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  width: 9999%;
+  left: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#slider ul li {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  float: left;
+}
+
+#slider ul li:nth-child(1) {
+  background: url("../images/home/01.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(2) {
+  background: url("../images/home/02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(3) {
+  background: url("../images/home/03.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(4) {
+  background: url("../images/home/04.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(5) {
+  background: url("../images/home/05.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(6) {
+  background: url("../images/home/06.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(7) {
+  background: url("../images/home/07.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#slider ul li:nth-child(8) {
+  background: url("../images/home/08.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#prev,
+#next {
+  z-index: 999;
+  position: absolute;
+  top: 45%;
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#prev:hover,
+#next:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#prev {
+  left: 50px;
+}
+
+#next {
+  right: 50px;
+}
+
+#slider #num {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#slider #num div {
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 2px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#slider #num div:hover {
+  background: #fff;
+}
 /*# sourceMappingURL=styles.css.map */
