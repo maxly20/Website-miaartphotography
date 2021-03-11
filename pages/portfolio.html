@@ -5,7 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="../styles/styles.css" />
-    <script src="../app.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <main class="portfolio">
+      <nav class="portfolio__navbar">
+        <a href="#"
+          ><img class="portfolio__logo" src="../images/logo.png" alt="logo"
+        /></a>
+        <ul class="portfolio__nav-links">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./pages/about.html">about</a></li>
+          <li><a href="./pages/portfolio.html">portfolio</a></li>
+          <li><a href="">gallery</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </nav>
+      <section class="portfolio__content">
+        <p>bride getting ready</p>
+        <div
+          id="bride-getting-ready"
+          data-nanogallery2='{
+              "thumbnailHeight":  200,
+              "thumbnailWidth":   300,
+              "itemsBaseURL":     "../images/portfolio/",
+              "thumbnailHoverEffect2":      "scale120",
+              "thumbnailBorderVertical": 0,
+              "thumbnailBorderHorizontal": 0,
+              "colorScheme": {
+              "thumbnail": {
+              "background": "rgba(255,255,255,1)" }},
+              "thumbnailLabel": {
+              "position": "overImageOnBottom" },
+              "thumbnailAlignment": "center",
+              "thumbnailOpenImage": true }'
+        >
+          <a href="bride-01.jpg" data-ngThumb="bride-01.jpg"></a>
+          <a href="bride-02.jpg" data-ngThumb="bride-02.jpg"></a>
+          <a href="bride-03.jpg" data-ngThumb="bride-03.jpg"></a>
+          <a href="bride-04.jpg" data-ngThumb="bride-04.jpg"></a>
+          <a href="bride-05.jpg" data-ngThumb="bride-05.jpg"></a>
+          <a href="bride-06.jpg" data-ngThumb="bride-06.jpg"></a>
+          <a href="bride-07.jpg" data-ngThumb="bride-07.jpg"></a>
+          <a href="bride-08.jpg" data-ngThumb="bride-08.jpg"></a>
+          <a href="bride-09.jpg" data-ngThumb="bride-09.jpg"></a>
+        </div>
+        <!-- Groom -->
+        <p>groom getting ready</p>
+        <div
+          id="groom-getting-ready"
+          data-nanogallery2='{
+              "thumbnailHeight":  200,
+              "thumbnailWidth":   300,
+              "itemsBaseURL":     "../images/portfolio/",
+              "thumbnailHoverEffect2":      "scale120",
+              "thumbnailBorderVertical": 0,
+              "thumbnailBorderHorizontal": 0,
+              "colorScheme": {
+              "thumbnail": {
+              "background": "rgba(255,255,255,1)" }},
+              "thumbnailLabel": {
+              "position": "overImageOnBottom" },
+              "thumbnailAlignment": "center",
+              "thumbnailOpenImage": true }'
+        >
+          <a href="groom-01.jpg" data-ngThumb="groom-01.jpg"></a>
+          <a href="groom-02.jpg" data-ngThumb="groom-02.jpg"></a>
+          <a href="groom-03.jpg" data-ngThumb="groom-03.jpg"></a>
+          <a href="groom-04.jpg" data-ngThumb="groom-04.jpg"></a>
+          <a href="groom-05.jpg" data-ngThumb="groom-05.jpg"></a>
+          <a href="groom-06.jpg" data-ngThumb="groom-06.jpg"></a>
+          <a href="groom-07.jpg" data-ngThumb="groom-07.jpg"></a>
+          <a href="groom-08.jpg" data-ngThumb="groom-08.jpg"></a>
+          <a href="groom-09.jpg" data-ngThumb="groom-09.jpg"></a>
+        </div>
+        <!-- Ceremony -->
+      </section>
+    </main>
+    <!-- personal script -->
+    <script src="../app.js"></script>
+  </body>
 </html>

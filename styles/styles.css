@@ -216,4 +216,99 @@ body {
     background-position: 70% 70%;
   }
 }
+
+.portfolio {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.portfolio__navbar {
+  width: 100vw;
+  height: 15vh;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__logo {
+  height: 12vh;
+  margin: 1rem 0;
+}
+
+.portfolio__nav-links {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__nav-links li {
+  list-style: none;
+}
+
+.portfolio__nav-links a:link,
+.portfolio__nav-links a:visited {
+  text-decoration: none;
+  color: #767674;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.portfolio__nav-links a:hover {
+  color: #bababa;
+}
+
+.portfolio__content {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.portfolio__content p {
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+
+#bride-getting-ready, #groom-getting-ready {
+  width: 60vw;
+  margin: 2rem 0 3rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__nav-links {
+    width: 95%;
+    margin-top: 1rem;
+  }
+  .portfolio__nav-links a {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

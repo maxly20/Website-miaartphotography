@@ -1,0 +1,66 @@
+.portfolio {
+  width: 100vw;
+  min-height: 100vh;
+}
+// navbar
+.portfolio__navbar {
+  width: 100vw;
+  height: 15vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio__logo {
+  height: 12vh;
+  margin: 1rem 0;
+}
+.portfolio__nav-links {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style: none;
+  }
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #767674;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  a:hover {
+    color: rgb(186, 186, 186);
+  }
+}
+.portfolio__content {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  p {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+  }
+}
+#bride-getting-ready, #groom-getting-ready {
+    width: 60vw;
+    margin: 2rem 0 3rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__nav-links {
+    width: 95%;
+    margin-top: 1rem;
+    a {
+      font-size: 1rem;
+    }
+  }
+}
