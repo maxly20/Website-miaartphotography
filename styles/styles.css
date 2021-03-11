@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -10,143 +10,210 @@
 
 body {
   background: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+/* Slideshow container */
+.slideshow-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-body {
-  background: #eb0303;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100vw;
+  height: 100vh;
 }
 
-header {
+.img1 {
+  background: url(../images/home/01.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  background: url(../images/home/02.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img3 {
+  background: url(../images/home/03.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img4 {
+  background: url(../images/home/04.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img5 {
+  background: url(../images/home/05.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img6 {
+  background: url(../images/home/06.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img7 {
+  background: url(../images/home/07.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.img8 {
+  background: url(../images/home/08.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1rem 2rem;
+  color: rgba(255, 255, 255, 0.541);
+  font-weight: bold;
+  font-size: 1.2rem;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: white;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 15vh;
+  padding: 0 2rem;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  height: 15vh;
+}
+
+.nav-links {
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 15vh;
-  padding: 20px 100px;
-  z-index: 1000;
 }
 
-#logo {
-  height: 100%;
-}
-
-header ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header li {
-  position: relative;
+.nav-links li {
   list-style: none;
-  margin-left: 40px;
 }
 
-header a {
-  color: #fff;
+.nav-links a:link,
+.nav-links a:visited {
   text-decoration: none;
+  color: white;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
-.banner {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
+.nav-links a:hover {
+  color: #bababa;
 }
 
-.imgBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.imgBx img {
-  position: absolute;
-  background-position: center;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  -webkit-transition: 0.8s ease-in;
-  transition: 0.8s ease-in;
-}
-
-.imgBx img.active {
-  opacity: 1;
-}
-
-.controls {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0;
-  width: 80px;
-}
-
-.controls li {
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  list-style: none;
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.controls li:hover {
-  background: #ffeb3b;
-  opacity: 1;
-}
-
-.controls li:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-left: 3px solid #111;
-  border-bottom: 3px solid #111;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.controls li:nth-child(2):before {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+@media screen and (max-width: 1024px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-links {
+    width: 95%;
+    margin-top: 1rem;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+  .img5 {
+    background-size: cover;
+    background-position: 70% 70%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
