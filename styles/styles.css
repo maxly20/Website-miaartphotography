@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 *,
 *::before,
 *::after {
@@ -9,5 +10,143 @@
 
 body {
   background: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #eb0303;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 15vh;
+  padding: 20px 100px;
+  z-index: 1000;
+}
+
+#logo {
+  height: 100%;
+}
+
+header ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header li {
+  position: relative;
+  list-style: none;
+  margin-left: 40px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.imgBx img {
+  position: absolute;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+.imgBx img.active {
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 80px;
+}
+
+.controls li {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  list-style: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.controls li:hover {
+  background: #ffeb3b;
+  opacity: 1;
+}
+
+.controls li:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #111;
+  border-bottom: 3px solid #111;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.controls li:nth-child(2):before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 /*# sourceMappingURL=styles.css.map */
