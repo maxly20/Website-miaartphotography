@@ -115,7 +115,7 @@
 }
 
 // navbar
-.navbar {
+.home__navbar {
   position: absolute;
   top: 0;
   left: 0;
@@ -127,10 +127,10 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo {
+.home__logo {
   height: 15vh;
 }
-.nav-links {
+.home__nav-links {
   width: 45%;
   display: flex;
   justify-content: space-between;
@@ -149,10 +149,10 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .navbar {
+  .home__navbar {
     flex-direction: column;
   }
-  .nav-links {
+  .home__nav-links {
     width: 95%;
     margin-top: 1rem;
     a {
