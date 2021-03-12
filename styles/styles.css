@@ -220,6 +220,16 @@ body {
 .portfolio {
   width: 100vw;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio__navbar {
@@ -297,9 +307,48 @@ body {
   text-transform: uppercase;
 }
 
-#bride-getting-ready, #groom-getting-ready {
-  width: 60vw;
+#bride-getting-ready,
+#groom-getting-ready,
+#ceremony,
+#family,
+#bridal-party,
+#creative,
+#reception,
+#engagement,
+#golden,
+#detail {
+  width: 1000px;
   margin: 2rem 0 3rem 0;
+}
+
+.footer {
+  width: 10%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a:link,
+.footer a:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  color: #767674;
+}
+
+.footer .fab,
+.footer .far {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1024px) {

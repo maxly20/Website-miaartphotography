@@ -1,6 +1,9 @@
 .portfolio {
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 // navbar
 .portfolio__navbar {
@@ -50,9 +53,40 @@
     text-transform: uppercase;
   }
 }
-#bride-getting-ready, #groom-getting-ready {
-    width: 60vw;
-    margin: 2rem 0 3rem 0;
+#bride-getting-ready,
+#groom-getting-ready,
+#ceremony,
+#family,
+#bridal-party,
+#creative,
+#reception,
+#engagement,
+#golden,
+#detail {
+  width: 1000px;
+  margin: 2rem 0 3rem 0;
+}
+
+// FOOTER
+.footer {
+  width: 10%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  a:hover {
+    color: #767674;
+  }
+  .fab,
+  .far {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
