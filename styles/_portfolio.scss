@@ -68,7 +68,7 @@
 }
 
 // FOOTER
-.footer {
+.portfolio__footer {
   width: 10%;
   margin: 2rem 0;
   display: flex;
@@ -89,12 +89,44 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 880px) {
   .portfolio__nav-links {
     width: 95%;
     margin-top: 1rem;
     a {
       font-size: 1rem;
     }
+  }
+  .portfolio__footer {
+    width: 15%;
+  }
+  #bride-getting-ready,
+  #groom-getting-ready,
+  #ceremony,
+  #family,
+  #bridal-party,
+  #creative,
+  #reception,
+  #engagement,
+  #golden,
+  #detail {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bride-getting-ready,
+  #groom-getting-ready,
+  #ceremony,
+  #family,
+  #bridal-party,
+  #creative,
+  #reception,
+  #engagement,
+  #golden,
+  #detail {
+    width: 600px;
+  }
+  .portfolio__footer {
+    width: 25%;
   }
 }
