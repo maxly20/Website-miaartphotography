@@ -93,7 +93,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 7rem;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .gallery__content p {
