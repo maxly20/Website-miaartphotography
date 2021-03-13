@@ -710,7 +710,7 @@ body {
 }
 
 .album__nav-links a:hover {
-  color: #bababa;
+  color: #adadad;
 }
 
 .album__content {
@@ -746,7 +746,8 @@ body {
 
 .album__footer {
   width: 10%;
-  margin: 2rem 0;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,7 +772,7 @@ body {
 
 .album__footer .fab,
 .album__footer .far {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 880px) {
