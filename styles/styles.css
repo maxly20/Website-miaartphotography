@@ -776,7 +776,7 @@ body {
 
 @media screen and (max-width: 880px) {
   .album__content {
-    width: 800px;
+    width: 90vw;
   }
   .album__nav-links {
     width: 95%;
@@ -792,7 +792,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .album__content {
-    width: 500px;
+    width: 95vw;
   }
   .album__footer {
     width: 25%;
