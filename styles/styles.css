@@ -219,8 +219,9 @@ body {
 }
 
 .gallery__footer {
-  width: 10%;
-  margin: 2rem 0;
+  width: 15%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,17 +236,30 @@ body {
 .gallery__footer a:link,
 .gallery__footer a:visited {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gallery__footer a:hover {
-  color: #767674;
+  color: #c0c0bf;
 }
 
 .gallery__footer .fab,
 .gallery__footer .far {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 880px) {
@@ -257,13 +271,13 @@ body {
     font-size: 1rem;
   }
   .gallery__footer {
-    width: 15%;
+    width: 25%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .gallery__footer {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -576,8 +590,9 @@ body {
 }
 
 .portfolio__footer {
-  width: 10%;
-  margin: 2rem 0;
+  width: 15%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,17 +607,30 @@ body {
 .portfolio__footer a:link,
 .portfolio__footer a:visited {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio__footer a:hover {
-  color: #767674;
+  color: #c0c0bf;
 }
 
 .portfolio__footer .fab,
 .portfolio__footer .far {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 880px) {
@@ -614,7 +642,7 @@ body {
     font-size: 1rem;
   }
   .portfolio__footer {
-    width: 15%;
+    width: 25%;
   }
   #bride-getting-ready,
   #groom-getting-ready,
@@ -644,7 +672,7 @@ body {
     width: 600px;
   }
   .portfolio__footer {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -745,8 +773,8 @@ body {
 }
 
 .album__footer {
-  width: 10%;
-  margin-top: 4rem;
+  width: 15%;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,17 +790,30 @@ body {
 .album__footer a:link,
 .album__footer a:visited {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .album__footer a:hover {
-  color: #767674;
+  color: #c0c0bf;
 }
 
 .album__footer .fab,
 .album__footer .far {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 880px) {
@@ -787,7 +828,7 @@ body {
     font-size: 1rem;
   }
   .album__footer {
-    width: 15%;
+    width: 25%;
   }
 }
 
@@ -796,7 +837,7 @@ body {
     width: 95vw;
   }
   .album__footer {
-    width: 25%;
+    width: 35%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
