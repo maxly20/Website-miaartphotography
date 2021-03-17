@@ -1,0 +1,127 @@
+.about {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // navbar
+  .about__navbar {
+    width: 100vw;
+    height: 15vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about__logo {
+    height: 12vh;
+    margin: 1rem 0;
+  }
+  .about__nav-links {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #767674;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    a:hover {
+      color: rgb(186, 186, 186);
+    }
+  }
+  .about__content {
+    max-width: 1160px;
+    min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+    margin-top: 7rem;
+    h4 {
+      text-transform: uppercase;
+      margin: 1rem 0;
+      text-align: justify;
+      color: rgb(74, 74, 74);
+    }
+    p {
+      font-weight: 300;
+      line-height: 1.6rem;
+      font-size: 1rem;
+      letter-spacing: 0.04rem;
+      color: rgb(74, 74, 74);
+    }
+  }
+  .about-me {
+    max-width: 1160px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    .about-me__content {
+      margin-left: 2rem;
+    }
+  }
+  .about__link:link,
+  .about__link:visited {
+    color: rgb(28, 28, 28);
+  }
+  .about__link:hover {
+    color: rgb(175, 175, 175);
+  }
+  
+  // FOOTER
+  .about__footer {
+    width: 15%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      height: 2.3rem;
+      width: 2.3rem;
+      border-radius: 50%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a:hover {
+      color: #c0c0bf;
+    }
+    .fab,
+    .far {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 880px) {
+    .about__nav-links {
+      width: 95%;
+      margin-top: 1rem;
+      a {
+        font-size: 1rem;
+      }
+    }
+    .about__footer {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .about__footer {
+      width: 35%;
+    }
+  }
+  
