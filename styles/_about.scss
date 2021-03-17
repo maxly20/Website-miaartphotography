@@ -38,7 +38,7 @@
   }
 }
 .about__content {
-  max-width: 960px;
+  max-width: 1160px;
   min-height: 100vh;
   // display: flex;
   // flex-direction: column;
@@ -49,26 +49,32 @@
     text-transform: uppercase;
     margin: 1rem 0;
     text-align: justify;
-    color: #666;
+    color: rgb(74, 74, 74);
   }
   p {
     font-weight: 300;
     line-height: 1.6rem;
     font-size: 1rem;
     letter-spacing: 0.04rem;
-    color: #666;
+    color: rgb(74, 74, 74);
   }
 }
 .about-me {
-  max-width: 960px;
+  max-width: 1160px;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
   .about-me__content {
     margin-left: 2rem;
-   
   }
-  
+}
+.about__link:link,
+.about__link:visited {
+  color: rgb(28, 28, 28);
+}
+.about__link:hover {
+  color: rgb(175, 175, 175);
 }
 
 // FOOTER

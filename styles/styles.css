@@ -79,7 +79,7 @@ body {
 }
 
 .about__content {
-  max-width: 960px;
+  max-width: 1160px;
   min-height: 100vh;
   margin-top: 7rem;
 }
@@ -88,7 +88,7 @@ body {
   text-transform: uppercase;
   margin: 1rem 0;
   text-align: justify;
-  color: #666;
+  color: #4a4a4a;
 }
 
 .about__content p {
@@ -96,12 +96,13 @@ body {
   line-height: 1.6rem;
   font-size: 1rem;
   letter-spacing: 0.04rem;
-  color: #666;
+  color: #4a4a4a;
 }
 
 .about-me {
-  max-width: 960px;
+  max-width: 1160px;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +113,15 @@ body {
 
 .about-me .about-me__content {
   margin-left: 2rem;
+}
+
+.about__link:link,
+.about__link:visited {
+  color: #1c1c1c;
+}
+
+.about__link:hover {
+  color: #afafaf;
 }
 
 .about__footer {
