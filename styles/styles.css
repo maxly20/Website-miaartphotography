@@ -187,6 +187,140 @@ body {
   }
 }
 
+.contact {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__navbar {
+  width: 100vw;
+  height: 15vh;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__logo {
+  height: 12vh;
+  margin: 1rem 0;
+}
+
+.contact__nav-links {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__nav-links li {
+  list-style: none;
+}
+
+.contact__nav-links a:link,
+.contact__nav-links a:visited {
+  text-decoration: none;
+  color: #767674;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contact__nav-links a:hover {
+  color: #bababa;
+}
+
+.contact__content {
+  max-width: 1160px;
+  min-height: 100vh;
+  margin-top: 7rem;
+}
+
+.contact__footer {
+  width: 15%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__footer a:link,
+.contact__footer a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__footer a:hover {
+  color: #c0c0bf;
+}
+
+.contact__footer .fab,
+.contact__footer .far {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 880px) {
+  .contact__nav-links {
+    width: 95%;
+    margin-top: 1rem;
+  }
+  .contact__nav-links a {
+    font-size: 1rem;
+  }
+  .contact__footer {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__footer {
+    width: 35%;
+  }
+}
+
 .gallery {
   width: 100vw;
   min-height: 100vh;

@@ -45,37 +45,10 @@
   // justify-content: center;
   // align-items: flex-start;
   margin-top: 7rem;
-  h4 {
-    text-transform: uppercase;
-    margin: 1rem 0;
-    text-align: justify;
-    color: rgb(74, 74, 74);
+
   }
-  p {
-    font-weight: 300;
-    line-height: 1.6rem;
-    font-size: 1rem;
-    letter-spacing: 0.04rem;
-    color: rgb(74, 74, 74);
-  }
-}
-.contact-me {
-  max-width: 1160px;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-  .contact-me__content {
-    margin-left: 2rem;
-  }
-}
-.contact__link:link,
-.contact__link:visited {
-  color: rgb(28, 28, 28);
-}
-.contact__link:hover {
-  color: rgb(175, 175, 175);
-}
+
+
 
 // FOOTER
 .contact__footer {
