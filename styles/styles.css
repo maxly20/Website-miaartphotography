@@ -761,6 +761,17 @@ input[type='email'] {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .intro-slideshow img:nth-child(5) {
+    -o-object-position: 70% 70%;
+       object-position: 70% 70%;
+  }
+  .intro-slideshow img:nth-child(6) {
+    -o-object-position: 60% 60%;
+       object-position: 60% 60%;
+  }
+}
+
 .portfolio {
   width: 100vw;
   min-height: 100vh;

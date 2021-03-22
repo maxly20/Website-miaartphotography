@@ -72,3 +72,11 @@
     background-position: 70% 70%;
   }
 }
+@media screen and (max-width: 600px) {
+  .intro-slideshow img:nth-child(5) {
+    object-position: 70% 70%;
+  }
+  .intro-slideshow img:nth-child(6) {
+    object-position: 60% 60%;
+  }
+}
