@@ -37,33 +37,34 @@
           id="contact__form"
         >
           <label
-            ><span>Name</span
-            ><input name="name" type="text" placeholder="Name"
+            ><span class="contact__detail">Name *</span
+            ><input class="contact__input" name="name" type="text" required
           /></label>
           <label
-            ><span>Email</span
-            ><input name="email" type="email" placeholder="Email"
+            ><span class="contact__detail">Email *</span
+            ><input class="contact__input" name="email" type="email" required
           /></label>
           <label
-            ><span>Phone Number</span
-            ><input name="mobile" type="text" placeholder="Phone Number"
+            ><span class="contact__detail">Phone Number *</span
+            ><input class="contact__input" name="mobile" type="text" required
           /></label>
           <label
-            ><span>Date</span
-            ><input name="date" type="text" placeholder="Wedding Date"
+            ><span class="contact__detail">Date</span
+            ><input class="contact__input" name="date" type="text"
           /></label>
           <label
-            ><span>Location</span
-            ><input name="location" type="text" placeholder="Location"
+            ><span class="contact__detail">Venue Location/Name</span
+            ><input class="contact__input" name="location" type="text"
           /></label>
           <label
-            ><span>Message</span
+            ><span class="contact__detail">Message</span
             ><textarea
+              class="input__text"
               name="message"
               placeholder="Please leave me some information about you and your wedding/session"
             ></textarea>
           </label>
-          <input name="submit" type="submit" value="Submit" />
+          <button class="contact__btn" type="submit">Submit</button>
         </form>
       </section>
 
