@@ -1,47 +1,15 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const slideshowImages = document.querySelectorAll('.intro-slideshow img');
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+const nextImageDelay = 5000;
+let currentImageCounter = 0;
+slideshowImages[currentImageCounter].style.opacity = 1;
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+setInterval(nextImage, nextImageDelay);
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
+function nextImage() {
+  slideshowImages[currentImageCounter].style.opacity = 0;
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
+  currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
 
-  slides[slideIndex - 1].style.display = 'block';
-}
-
-// slideshow
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  slideshowImages[currentImageCounter].style.opacity = 1;
 }
