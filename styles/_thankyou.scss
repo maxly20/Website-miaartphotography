@@ -1,4 +1,4 @@
-.contact {
+.thankyou {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 // navbar
-.contact__navbar {
+.thankyou__navbar {
   width: 100vw;
   height: 15vh;
   padding: 0 2rem;
@@ -15,11 +15,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.contact__logo {
+.thankyou__logo {
   height: 12vh;
   margin: 1rem 0;
 }
-.contact__nav-links {
+.thankyou__nav-links {
   width: 45%;
   display: flex;
   justify-content: space-between;
@@ -37,71 +37,26 @@
     color: rgb(186, 186, 186);
   }
 }
-.contact__content {
+.thankyou__content {
   max-width: 1160px;
-  min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: flex-start;
+  min-height: 60vh;
   margin-top: 7rem;
-}
-.contact__header {
-  margin-bottom: 5rem;
-  text-align: center;
-}
-#contact__form {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  .contact__detail {
-    display: block;
+  align-items: center;
+  h2 {
+    font-weight: 400;
+    text-align: center;
   }
-  .contact__input {
-    display: block;
-    width: 100%;
-    height: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 0.3rem;
+  p {
+    font-weight: 200;
+    margin-top: 2rem;
+    text-align: center;
   }
-  .input__text {
-    display: block;
-    width: 100%;
-    height: 8rem;
-    margin-bottom: 1rem;
-    margin-top: 0.3rem;
-  }
-}
-input[type='text'] {
-  background-color: #fdfdfd;
-  border: solid 0.5px grey;
-  padding-left: 1rem;
-}
-input[type='email'] {
-  background-color: #fdfdfd;
-  border: solid 0.5px grey;
-  padding-left: 1rem;
-}
-.contact__btn {
-  cursor: pointer;
-  display: inline-block;
-  width: 30%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  padding: 6px 12px;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  align-self: center;
-  color: white;
-  background-color: black;
-  outline: none;
-  border: none;
 }
 
 // FOOTER
-.contact__footer {
+.thankyou__footer {
   width: 15%;
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -131,19 +86,25 @@ input[type='email'] {
 }
 
 @media screen and (max-width: 880px) {
-  .contact__nav-links {
+  .thankyou__nav-links {
     width: 95%;
     margin-top: 1rem;
     a {
       font-size: 1rem;
     }
   }
-  .contact__footer {
+  .thankyou__footer {
     width: 25%;
   }
 }
 @media screen and (max-width: 600px) {
-  .contact__footer {
+  .thankyou__footer {
     width: 35%;
+  }
+  .thankyou__content {
+    h2,
+    p {
+      margin: 0 1rem;
+    }
   }
 }
