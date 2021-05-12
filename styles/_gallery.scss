@@ -40,12 +40,13 @@
   }
 }
 .gallery__content {
-  width: 1150px;
+  max-width: 1150px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 2rem;
   margin-top: 7rem;
   gap: 2rem;
   p {
