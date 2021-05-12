@@ -107,7 +107,6 @@ body {
   max-width: 1160px;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +173,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .about {
+    padding: 0 3rem;
+  }
   .about-me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -185,6 +187,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .about-me .about-me__content {
+    margin-left: 0;
   }
 }
 
@@ -202,6 +207,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .about {
+    padding: 0 2rem;
+  }
   .about__footer {
     width: 35%;
   }

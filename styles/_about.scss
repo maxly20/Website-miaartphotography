@@ -67,7 +67,7 @@
   max-width: 1160px;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   .about-me__content {
@@ -112,15 +112,20 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .about {
+    padding: 0 3rem;
+  }
   .about-me {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .about-me__content {
+      margin-left: 0;
+    }
   }
 }
 
 @media screen and (max-width: 880px) {
- 
   .about__nav-links {
     width: 95%;
     margin-top: 1rem;
@@ -133,6 +138,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .about {
+    padding: 0 2rem;
+  }
   .about__footer {
     width: 35%;
   }
