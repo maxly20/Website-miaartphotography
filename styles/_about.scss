@@ -111,8 +111,16 @@
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 1000px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 880px) {
+ 
   .about__nav-links {
     width: 95%;
     margin-top: 1rem;
